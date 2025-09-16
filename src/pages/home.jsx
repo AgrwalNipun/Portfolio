@@ -7,7 +7,7 @@ const HomeScreen = () => {
   return (
     <div className = "min-h-screen bg-background text-foreground">
 
-      {/* <ThemeToggle/> */}
+      <ThemeToggle/>
 
       <StarBackGround />
       <Navbar/>
