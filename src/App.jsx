@@ -1,27 +1,20 @@
-
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomeScreen from './pages/home'
-import NotFound from './pages/404_not_found'
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Toaster } from "@/components/ui/toaster";
 
 function App() {
-
   return (
     <>
-    <BrowserRouter>
-    
-      <Routes>
-        
-        <Route  index element = {<HomeScreen/>}></Route>
-        <Route  path = '/' element = {<HomeScreen/>}></Route>
-
-        <Route  path = '*' element = {<NotFound/>}></Route>
-      </Routes>
-
-    </BrowserRouter>
-      
+      <Toaster />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
