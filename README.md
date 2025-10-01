@@ -20,6 +20,6 @@ Animations & UI Enhancements – Smooth interactions using modern React librarie
 
 Frontend: React, JavaScript/TypeScript, HTML5, CSS3
 
-Styling: Tailwind CSS / Styled Components / SCSS (choose yours)
+Styling: Tailwind CSS 
 
 Deployment: Vercel 
