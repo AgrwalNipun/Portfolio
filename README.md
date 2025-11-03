@@ -1,6 +1,6 @@
 This is my personal portfolio website built using React. It showcases my projects, skills, and experience as a developer.
 
-Check out my portfolio at https://nipun-agrawal.vercel.app/
+Check out my portfolio at https://agrwalnipun.github.io/Portfolio/
 
 🚀 Features
 
