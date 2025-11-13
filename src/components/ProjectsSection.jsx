@@ -1,24 +1,26 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+// import {rolbolImage} from "../public/assets/rolbol.png";
+
 
 const projects = [
   {
     id: 1,
     title: "Rolbol Mobile Frontend",
     description: "A beautiful frontend for Rolbol, A community app.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    image: "Portfolio/projects/rolbol.png",
+    tags: ["Flutter", "Android Studio", "Firebase"],
+    demoUrl: "https://play.google.com/store/apps/details?id=com.technolitics.rolbol",
+    githubUrl: "https://github.com/AgrwalNipun/rolbol",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "AI Roadmap Generator",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A personalized roadmap generator that uses AI to create structured learning or project plans based on user prompts.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Spring Boot", "Gemini APIs", "React.js"],
+    demoUrl: "https://roadmap-ai-frontend-eta.vercel.app/",
+    githubUrl: "https://github.com/AgrwalNipun/AI_Roadmap_Backend",
   },
   // {
   //   id: 3,
@@ -46,17 +48,17 @@ export const ProjectsSection = () => {
           crafted with attention to detail, performance, and user experience.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
