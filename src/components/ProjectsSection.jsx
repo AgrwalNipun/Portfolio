@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Rolbol Mobile Frontend",
     description: "A beautiful frontend for Rolbol, A community app.",
-    image: "Portfolio/projects/rolbol.png",
+    image: "/projects/rolbol.png",
     tags: ["Flutter", "Android Studio", "Firebase"],
     demoUrl: "https://play.google.com/store/apps/details?id=com.technolitics.rolbol",
     githubUrl: "https://github.com/AgrwalNipun/rolbol",
@@ -17,7 +17,7 @@ const projects = [
     title: "AI Roadmap Generator",
     description:
       "A personalized roadmap generator that uses AI to create structured learning or project plans based on user prompts.",
-    image: "/projects/project2.png",
+    image: "/projects/ai_roadmap.png",
     tags: ["Spring Boot", "Gemini APIs", "React.js"],
     demoUrl: "https://roadmap-ai-frontend-eta.vercel.app/",
     githubUrl: "https://github.com/AgrwalNipun/AI_Roadmap_Backend",
