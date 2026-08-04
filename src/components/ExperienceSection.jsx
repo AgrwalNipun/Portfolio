@@ -4,8 +4,7 @@ const experiences = [
     role: "Software Developer",
     company: "Gravity Engineering Services",
     period: "2026 January - 2026 July",
-    description:
-      "Built and maintained full-stack web applications, improving performance and developer experience.",
+    description: "Developed and maintained 10+ core modules of a production CRM application,  contributing to feature development, bug fixes, and ongoing maintenance. Improved application performance and UI responsiveness by reducing page load times by approximately 15% through frontend refactoring and asset optimization.",
     tags: ["React", "Spring Boot"],
   },
   {
