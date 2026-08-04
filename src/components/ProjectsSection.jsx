@@ -3,15 +3,19 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 
 const projects = [
+
   {
     id: 1,
-    title: "Rolbol Mobile Frontend",
-    description: "A beautiful frontend for Rolbol, A community app.",
-    image: "/projects/rolbol.png",
-    tags: ["Flutter", "Android Studio", "Firebase"],
-    demoUrl: "https://play.google.com/store/apps/details?id=com.technolitics.rolbol",
-    githubUrl: "https://github.com/AgrwalNipun/rolbol",
+    title: "API Change Notifier",
+    description:
+      "A GitHub workflow that extracts API endpoints from any Spring Boot project and notifies users about changes.",
+    image: "/projects/gh_actions_v2.png",
+    tags: ["Github Actions", "Spring Boot", "React.js"],
+    githubUrl: "https://github.com/AgrwalNipun/api_change_notifier",
   },
+
+
+
   {
     id: 2,
     title: "AI Roadmap Generator",
@@ -22,6 +26,17 @@ const projects = [
     demoUrl: "https://roadmap-ai-frontend-eta.vercel.app/",
     githubUrl: "https://github.com/AgrwalNipun/AI_Roadmap_Backend",
   },
+
+  {
+    id: 3,
+    title: "Rolbol Mobile Frontend",
+    description: "A beautiful frontend for Rolbol, A community app.",
+    image: "/projects/rolbol.png",
+    tags: ["Flutter", "Android Studio", "Firebase"],
+    demoUrl: "https://play.google.com/store/apps/details?id=com.technolitics.rolbol",
+    githubUrl: "https://github.com/AgrwalNipun/rolbol",
+  },
+
   // {
   //   id: 3,
   //   title: "E-commerce Platform",
@@ -58,7 +73,7 @@ export const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
@@ -77,6 +92,9 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
+                  
+
+                    {project.demoUrl && (
                     <a
                       href={project.demoUrl}
                       target="_blank"
@@ -84,6 +102,11 @@ export const ProjectsSection = () => {
                     >
                       <ExternalLink size={20} />
                     </a>
+                    )}
+
+                   
+                    
+                    
                     <a
                       href={project.githubUrl}
                       target="_blank"
