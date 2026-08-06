@@ -32,7 +32,7 @@ const projects = [
 },
 
   {
-    id: 4,
+    id: 4, 
     title: "AI Roadmap Generator",
     description:
       "A personalized roadmap generator that uses AI to create structured learning or project plans based on user prompts.",
