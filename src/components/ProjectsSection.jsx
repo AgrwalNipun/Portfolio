@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Terminal } from "lucide-react";
 // import {rolbolImage} from "../public/assets/rolbol.png";
 
 
@@ -14,10 +14,25 @@ const projects = [
     githubUrl: "https://github.com/AgrwalNipun/api_change_notifier",
   },
 
-
+{
+  id: 2,
+  title: "Movie Watchlist Backend",
+  description:
+    "A Node.js and Express REST API featuring JWT authentication and CRUD endpoints for managing users' personal movie watchlists.",
+  tags: ["Node.js", "Express.js", "PostgreSQL", "JWT"],
+  githubUrl: "https://github.com/AgrwalNipun/MovieBackend",
+},
+{
+  id: 3,
+  title: "Public Issue Reporting System",
+  description:
+    "A full-stack platform that enables citizens to report public issues, track complaint status, and helps authorities manage and resolve them efficiently.",
+  tags: ["React.js", "Spring Boot", "Java", "PostgreSQL"],
+  githubUrl: "https://github.com/AgrwalNipun/public_issue",
+},
 
   {
-    id: 2,
+    id: 4,
     title: "AI Roadmap Generator",
     description:
       "A personalized roadmap generator that uses AI to create structured learning or project plans based on user prompts.",
@@ -28,7 +43,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 5,
     title: "Rolbol Mobile Frontend",
     description: "A beautiful frontend for Rolbol, A community app.",
     image: "/projects/rolbol.png",
@@ -70,11 +85,20 @@ export const ProjectsSection = () => {
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden flex items-center justify-center">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center gap-2 text-primary/70">
+                    <Terminal className="h-12 w-12" />
+                    <span className="text-sm font-medium text-muted-foreground px-4 text-center">
+                      {project.title}
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="p-6">

@@ -19,13 +19,13 @@ export const AboutSection = () => {
 
             <p className="text-muted-foreground">
               With a strong foundation in web and mobile development,
-               I specialize in building responsive, intuitive, and 
-               high-performance applications that deliver a seamless user experience.
+              I specialize in building responsive, intuitive, and
+              high-performance applications that deliver a seamless user experience.
             </p>
 
             <p className="text-muted-foreground">
-            I’m driven by solving complex problems with elegant solutions and continuously
-             learning new techniques to stay ahead in the ever-evolving tech landscape.
+              I’m driven by solving complex problems with elegant solutions and continuously
+              learning new techniques to stay ahead in the ever-evolving tech landscape.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -61,7 +61,7 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <TabletSmartphone className="h-6 w-6 text-primary"/>
+                  <TabletSmartphone className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Mobile Development</h4>
@@ -80,11 +80,10 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Spring Boot Development
-</h4>
+                  <h4 className="font-semibold text-lg">Backend Development
+                  </h4>
                   <p className="text-muted-foreground">
-                    Building robust and scalable backend systems with modern Java frameworks.
-                  </p>
+                    Developing robust, scalable backend applications with modern Java and JavaScript frameworks.                  </p>
                 </div>
               </div>
             </div>
